@@ -51,6 +51,7 @@
 
 	<!-- Modernizr JS -->
 	<script src="../js/modernizr-2.6.2.min.js"></script>
+
 	<!-- FOR IE9 below -->
 	<!--[if lt IE 9]>
 	<script src="js/respond.min.js"></script>
@@ -136,13 +137,28 @@
 						</ul>
 
 						5 * 7 * 2 = 70 students can sit in this room. 
-						Let’s expand this problem further. How many students can you fit in this room?
+						Let’s expand this problem further.
 						<br>
 						<img src="../images/examples/class_room_b.png" />
 						<br>
+						<div class="md-form">
+							<label for="form1">
+								How many students can you fit in this room?
+							</label>
+							<textarea id="form1" class="md-textarea form-control" rows="3"></textarea>
+						</div>
+						<br>
+						<span id="tbr-hidden">
+							<b>Solution</b>
+							<br>
+							Using your new decomposition skills, you would likely divide the room into 3 sections
+							and then calculate the number of seats in section A + section B + section C. Follow the
+							same workflow identified in Example 2, for each respective section. Then add A + B + C. 
+						</span>
+
 					</p><br>
 
-					<p><a class="btn btn-primary btn-lg btn-demo" href="students.html"></i> Next </a>
+					<p><a class="btn btn-primary btn-lg btn-demo" id="to-be-revealed" tbr-href="eggs_and_spaghetti.html" tbr-text="Next">See Solution</a>
 
 				</div>
 			</div>
@@ -168,6 +184,8 @@
 	<script src="../js/jquery.flexslider-min.js"></script>
 	<!-- Main -->
 	<script src="../js/main.js"></script>
+	<!-- Reveal -->
+	<script src="../js/reveal.js"></script>
 
 	</body>
 </html>
